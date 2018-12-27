@@ -3,6 +3,7 @@ Library
 Temp
 *.pidb
 *.userprefs
+.collabignore
 
 # Xcode
 xcuserdata
