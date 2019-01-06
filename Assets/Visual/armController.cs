@@ -9,7 +9,7 @@ public class armController : MonoBehaviour
 
     private float firstArmLength = 20f;
     public float thickness = 0.5f;
-    public float speed = 1f;
+    public float speed = 10f;
 
     public LineRenderer lineRenderer;
     public TrailRenderer trailRenderer;

@@ -331,13 +331,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b8a7aa07d945c4687a2722f96cbd55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nValues: []
+  harmonics: []
   audioVisual: {fileID: 1837373671242144, guid: 4a3e80de769fc02449eb209b01bd261e,
     type: 2}
-  audioVisuals: []
+  audioVisualsObjects: []
   oscillatorInput: {fileID: 1204192336629936, guid: 1e68fb161ab89f3438d6b4116fc40daa,
     type: 2}
   oscillatorInputParent: {fileID: 520066261}
+  audioGain: 0.01
 --- !u!4 &533572496
 Transform:
   m_ObjectHideFlags: 0
@@ -362,6 +363,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -440,7 +442,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc9794ffbde36146be163da19ef4b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -1
+  moveSpeed: -4
+--- !u!164 &534669907
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -100
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.83
+  m_ReflectionsLevel: -2602
+  m_ReverbLevel: 200
+  m_ReverbDelay: 0.011
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 1
 --- !u!1 &729934251
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16367926, g: 1, b: 0.07075471, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

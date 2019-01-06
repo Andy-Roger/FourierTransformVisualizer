@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4914667831742828}
-  - component: {fileID: 82785912325788386}
+  - component: {fileID: 82310259791996816}
   - component: {fileID: 114936232839023502}
   m_Layer: 0
   m_Name: AudioController
@@ -100,7 +100,7 @@ Transform:
   m_Father: {fileID: 4322082288194954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82785912325788386
+--- !u!82 &82310259791996816
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -155,7 +155,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.16
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -185,7 +185,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.1
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -226,8 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b18e2cc3e48474d86d54649a0b906d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: 0
-  samplerate: 44100
   frequency: 440
   fourierManager: {fileID: 0}
   harmonics: []

@@ -13,6 +13,8 @@ public class fourierManager : MonoBehaviour
     public GameObject oscillatorInput;
     public GameObject oscillatorInputParent;
 
+    public float audioGain = 1;
+
     void Start()
     {
         harmonics.Add(1);
@@ -107,7 +109,7 @@ public class fourierManager : MonoBehaviour
             destroyWave(3);
         if (Input.GetKeyUp(KeyCode.K))
             destroyWave(4);
-        if (Input.GetKeyUp(KeyCode.L))
+        if (Input.GetKeyUp(KeyCode.O))
             destroyWave(5);
     }
 
@@ -139,7 +141,7 @@ public class fourierManager : MonoBehaviour
             createWave(3);
         if (Input.GetKeyDown(KeyCode.K))
             createWave(4);
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.O))
             createWave(5);
     }
 }
